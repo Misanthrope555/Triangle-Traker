@@ -9,9 +9,16 @@ function triangle(){
     var sideBsquared = parseInt(document.side.sideB.value * document.side.sideB.value);
     var sideCsquared = parseInt(document.side.sideC.value * document.side.sideC.value );
 
-    //checks two sides of a triangle
+    //checks two sides of a triangle to determine if a triangle can be formed
     var sideAB = parseInt(document.side.sideA.value) + (document.side.sideB.value);
     var sideAC = parseInt(document.side.sideA.value) + (document.side.sideC.value);
-    var sideCB = parseInt(document.side.sideC.value) + (document.side.sideB.value);
-    
+    var sideBC = parseInt(document.side.sideC.value) + (document.side.sideB.value);
+
+    if((sideAB>sideC)&& (sideAC>sideB)&& (sideBC>sideA)){
+        window.alert("These will form a triangle");
+
+    }
+
+  
+
 }
